@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  TinyLand.vcxproj -> C:\Users\Server\Documents\GitHub\TinyLand_A7\TinyLand\_bin\Debug\TinyLand.exe
+C:\Users\Wilso\Documents\GitHub\TinyLand_A7\TinyLand\_build\main.cpp(35,46): error C2065: “path”: 未声明的标识符

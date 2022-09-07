@@ -3,6 +3,9 @@
    === MoYuStudio 2022 ===
 */
 
+#include <stdio.h>
+#include <iostream>
+#include <string>
 #include "raylib.h"
 
 using namespace std;
@@ -18,26 +21,36 @@ int block_map[3][3] = {
                         {0,0,0}
 };
 
-void block(int x, int y)
-{
-    Texture2D block = LoadTexture("./assets/block/1.png");
-    block.width = block_width;
-    block.height = block_width;
-    DrawTexture(block, x, y, RAYWHITE);
+//for (int id = 0; 1 <= 5; id++)
+//string id_str = id;
+//string path = "./assets/block/" + id_str + ".png";
 
+
+
+void block_rander(int x, int y)
+{
+    for (int id = 0; 1 <= 5; id++)
+        string path = "./assets/block/"+to_string(id)+".png";
+
+        Texture2D block_assets = LoadTexture(path);
+        block_assets.width = block_width;
+        block_assets.height = block_width;
+        DrawTexture(block_assets, x, y, RAYWHITE);
 }
 
 void block_map_rander()
 {
-    for (int x = 0; x <= map_size; x = x + 1)
-        for (int y = 0; y <= map_size; y = y + 1)
+
+    for (int x = 0; x <= map_size; x ++)
+        for (int y = 0; y <= map_size; y ++)
         {
             // self.rect.x = self.pos['z']*(self.width/2)-self.pos['x']*(self.width/2)+self.offset[0]
             // self.rect.y = self.pos['x']*(self.width/4)+self.pos['z']*(self.width/4)+self.offset[1]+(-self.width/2)*int(self.pos['y'])
             int rect_x = y * (block_width / 2) - x * (block_width / 2) + 200;
             int rect_y = x * (block_width / 4) + y * (block_width / 4) + 100;
 
-            block(rect_x, rect_y);
+            block_rander(rect_x, rect_y);
+
         };
 
 }

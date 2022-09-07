@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2871409d-143e-9ba8-3d57-89502983d036": {
+      "ProjectGuid": "2871409d-143e-9ba8-3d57-89502983d036",
+      "DisplayName": "TinyLand",
+      "ColorIndex": 0
+    },
+    "8898ea18-743a-15ef-5df5-284349369c3f": {
+      "ProjectGuid": "8898ea18-743a-15ef-5df5-284349369c3f",
+      "DisplayName": "raylib",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
